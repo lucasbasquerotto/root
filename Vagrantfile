@@ -7,13 +7,13 @@ Vagrant.configure(2) do |config|
      mount_options: ["dmode=700,fmode=700"]
   config.vm.synced_folder "./clouds/", "/lrd/clouds", id: "clouds", 
      owner: "vagrant",
-     mount_options: ["dmode=700,fmode=700"]
+     mount_options: ["dmode=700,fmode=744"]
   config.vm.synced_folder "./pods/", "/lrd/pods", id: "pods", 
      owner: "vagrant",
-     mount_options: ["dmode=700,fmode=700"]
+     mount_options: ["dmode=755,fmode=744"]
   config.vm.synced_folder "./apps/", "/lrd/apps", id: "apps", 
      owner: "vagrant",
-     mount_options: ["dmode=700,fmode=700"]
+     mount_options: ["dmode=755,fmode=644"]
   config.vm.synced_folder "./data/", "/lrd/data", id: "data", 
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=700"]
