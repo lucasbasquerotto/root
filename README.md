@@ -5,7 +5,7 @@ This repository serves as a root directory for a setup.
 On Linux, with bash installed, run:
 
 ```shell
-./setup.sh
+./bin/setup.sh
 ```
 
 On other environments, with Vagrant and VirtualBox installed, run:
@@ -14,7 +14,8 @@ On other environments, with Vagrant and VirtualBox installed, run:
 vagrant up
 vagrant ssh
 sudo -i
-cd /vagrant
+cd /lrd
+./bin/setup.sh
 ```
 
 This will prepare the enviroment and make it read to run be used.

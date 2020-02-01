@@ -1,4 +1,29 @@
 Vagrant.configure(2) do |config|
+  config.vm.synced_folder "./ctl/", "/lrd/ctl", id: "ctl", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./envs/", "/lrd/envs", id: "envs", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./clouds/", "/lrd/clouds", id: "clouds", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./pods/", "/lrd/pods", id: "pods", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./apps/", "/lrd/apps", id: "apps", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./data/", "/lrd/data", id: "data", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./bin/", "/lrd/bin", id: "bin", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=700"]
+  config.vm.synced_folder "./r/", "/lrd/r", id: "r", 
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=600"]
+
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
     v.cpus = 4
@@ -35,6 +60,9 @@ Vagrant.configure(2) do |config|
       echo "Acquire::Languages { 'none' };" >/etc/apt/apt.conf.d/05no-languages
       apt-get update
       wget -qO- https://get.docker.com/ | sh
+	  curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(un
+ame -m)" -o /usr/local/bin/docker-compose
+	  chmod +x /usr/local/bin/docker-compose
     EOF
   end
 end
