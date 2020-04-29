@@ -8,3 +8,15 @@
 !Vagrantfile
 
 !/bin/
+!/apps
+!/apps/.gitkeep
+!/clouds
+!/clouds/.gitkeep
+!/data
+!/data/.gitkeep
+!/envs
+!/envs/.gitkeep
+!/pods
+!/pods/.gitkeep
+!/w
+!/w/.gitkeep
