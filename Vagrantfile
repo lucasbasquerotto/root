@@ -1,26 +1,26 @@
 Vagrant.configure(2) do |config|
-  config.vm.synced_folder "./ctl/", "/lrd/ctl", id: "ctl", 
+  config.vm.synced_folder "./ctl/", "/lrd/ctl", id: "ctl",
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=700"]
-  config.vm.synced_folder "./envs/", "/lrd/envs", id: "envs", 
+  config.vm.synced_folder "./envs/", "/lrd/envs", id: "envs",
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=700"]
-  config.vm.synced_folder "./clouds/", "/lrd/clouds", id: "clouds", 
+  config.vm.synced_folder "./clouds/", "/lrd/clouds", id: "clouds",
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=744"]
-  config.vm.synced_folder "./pods/", "/lrd/pods", id: "pods", 
+  config.vm.synced_folder "./pods/", "/lrd/pods", id: "pods",
      owner: "vagrant",
      mount_options: ["dmode=755,fmode=744"]
-  config.vm.synced_folder "./apps/", "/lrd/apps", id: "apps", 
+  config.vm.synced_folder "./apps/", "/lrd/apps", id: "apps",
      owner: "vagrant",
      mount_options: ["dmode=755,fmode=644"]
-  config.vm.synced_folder "./data/", "/lrd/data", id: "data", 
+  config.vm.synced_folder "./data/", "/lrd/data", id: "data",
      owner: "vagrant",
-     mount_options: ["dmode=777,fmode=666"]
-  config.vm.synced_folder "./bin/", "/lrd/bin", id: "bin", 
+     mount_options: ["dmode=777,fmode=777"]
+  config.vm.synced_folder "./bin/", "/lrd/bin", id: "bin",
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=700"]
-  config.vm.synced_folder "./w/", "/lrd/w", id: "w", 
+  config.vm.synced_folder "./w/", "/lrd/w", id: "w",
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=600"]
 
