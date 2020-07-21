@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "/home/lucas/dev/ctl/env-main"
+		},
+		{
+			"path": "/home/lucas/dev/ctl"
+		},
+		{
+			"path": "/home/lucas/dev/envs/env/env-base"
+		},
+		{
+			"path": "/home/lucas/dev/envs/env"
+		},
+		{
+			"path": "/home/lucas/dev/clouds/cloud/custom-cloud"
+		},
+		{
+			"path": "/home/lucas/dev/clouds/cloud"
+		},
+		{
+			"path": "/home/lucas/dev/pods/pod/custom-pod"
+		},
+		{
+			"path": "/home/lucas/dev/pods/pod"
+		},
+		{
+			"path": "/home/lucas/dev/apps/app"
+		},
+		{
+			"path": "/home/lucas/dev/container-images"
+		},
+		{
+			"path": "/home/lucas/dev"
+		}
+	],
+	"settings": {}
+}
