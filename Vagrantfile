@@ -10,7 +10,7 @@ Vagrant.configure(2) do |config|
      mount_options: ["dmode=700,fmode=744"]
   config.vm.synced_folder "./pods/", "/lrd/pods", id: "pods",
      owner: "vagrant",
-     mount_options: ["dmode=755,fmode=744"]
+     mount_options: ["dmode=777,fmode=777"]
   config.vm.synced_folder "./apps/", "/lrd/apps", id: "apps",
      owner: "vagrant",
      mount_options: ["dmode=755,fmode=644"]
