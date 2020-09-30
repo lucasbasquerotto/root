@@ -1,40 +1,56 @@
 {
 	"folders": [
 		{
-			"path": "/home/lucas/dev/ctl/env-main"
+			"name": "env-main",
+			"path": "ctl/env-main"
 		},
 		{
-			"path": "/home/lucas/dev/ctl"
+			"name": "ctl",
+			"path": "ctl"
 		},
 		{
-			"path": "/home/lucas/dev/envs/env/env-base"
+			"name": "env-base",
+			"path": "envs/env/env-base"
 		},
 		{
-			"path": "/home/lucas/dev/envs/env"
+			"name": "env",
+			"path": "envs/env"
 		},
 		{
-			"path": "/home/lucas/dev/clouds/cloud/custom-cloud"
+			"name": "custom-cloud",
+			"path": "clouds/cloud/custom-cloud"
 		},
 		{
-			"path": "/home/lucas/dev/clouds/cloud"
+			"name": "cloud",
+			"path": "clouds/cloud"
 		},
 		{
-			"path": "/home/lucas/dev/pods/pod/custom-pod"
+			"name": "custom-pod",
+			"path": "pods/pod/custom-pod"
 		},
 		{
-			"path": "/home/lucas/dev/pods/pod"
+			"name": "pod",
+			"path": "pods/pod"
 		},
 		{
-			"path": "/home/lucas/dev/apps/app"
+			"name": "app",
+			"path": "apps/app"
 		},
 		{
-			"path": "/home/lucas/dev/container-images"
+			"name": "container-images",
+			"path": "container-images"
 		},
 		{
+			"name": "backups",
 			"path": "backups"
 		},
 		{
-			"path": "/home/lucas/dev"
+			"name": "projects",
+			"path": "projects"
+		},
+		{
+			"name": "dev",
+			"path": "."
 		}
 	],
 	"settings": {}
