@@ -17,6 +17,9 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder "./data/", "/lrd/data", id: "data",
      owner: "vagrant",
      mount_options: ["dmode=777,fmode=777"]
+  config.vm.synced_folder "./projects/", "/lrd/projects", id: "projects",
+     owner: "vagrant",
+     mount_options: ["dmode=700,fmode=600"]
   config.vm.synced_folder "./bin/", "/lrd/bin", id: "bin",
      owner: "vagrant",
      mount_options: ["dmode=700,fmode=700"]
