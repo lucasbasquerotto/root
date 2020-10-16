@@ -25,12 +25,12 @@
 			"path": "repos/custom-cloud"
 		},
 		{
-			"name": "custom-pod",
-			"path": "pods/pod/custom-pod"
+			"name": "pod",
+			"path": "repos/pod"
 		},
 		{
-			"name": "pod",
-			"path": "pods/pod"
+			"name": "custom-pod",
+			"path": "repos/custom-pod"
 		},
 		{
 			"name": "app",
