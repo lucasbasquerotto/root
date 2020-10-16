@@ -18,4 +18,4 @@ fi
 
 echo -e "${CYAN}$(date '+%F %X') Root Setup...${NC}"
 
-"$ctl_dir"/run dev-setup "https://lucasbasquerotto@bitbucket.org/lucasbasquerotto/ansible-main-env-demo.git"
+"$ctl_dir"/run setup "https://lucasbasquerotto@bitbucket.org/lucasbasquerotto/ansible-main-env-demo.git"

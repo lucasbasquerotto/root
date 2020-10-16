@@ -53,5 +53,9 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+        "[yaml]": {
+            "editor.tabSize": 2
+        }
+    }
 }
