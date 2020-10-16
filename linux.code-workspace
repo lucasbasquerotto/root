@@ -9,20 +9,20 @@
 			"path": "ctl"
 		},
 		{
-			"name": "env-base",
-			"path": "envs/env/env-base"
-		},
-		{
 			"name": "env",
-			"path": "envs/env"
+			"path": "repos/env"
 		},
 		{
-			"name": "custom-cloud",
-			"path": "clouds/cloud/custom-cloud"
+			"name": "env-base",
+			"path": "repos/env-base"
 		},
 		{
 			"name": "cloud",
-			"path": "clouds/cloud"
+			"path": "repos/cloud"
+		},
+		{
+			"name": "custom-cloud",
+			"path": "repos/custom-cloud"
 		},
 		{
 			"name": "custom-pod",
