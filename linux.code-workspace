@@ -5,7 +5,6 @@
 			"path": "ctl/env-main"
 		},
 		{
-			"name": "ctl",
 			"path": "ctl"
 		},
 		{
@@ -37,16 +36,16 @@
 			"path": "apps/app"
 		},
 		{
-			"name": "container-images",
 			"path": "container-images"
 		},
 		{
-			"name": "backups",
 			"path": "backups"
 		},
 		{
-			"name": "projects",
 			"path": "projects"
+		},
+		{
+			"path": "data"
 		},
 		{
 			"name": "dev",
