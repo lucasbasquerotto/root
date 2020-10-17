@@ -35,9 +35,9 @@ Vagrant.configure(2) do |config|
       echo "Acquire::Languages { 'none' };" >/etc/apt/apt.conf.d/05no-languages
       apt-get update
       wget -qO- https://get.docker.com/ | sh
-	  curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(un
+      curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(un
 ame -m)" -o /usr/local/bin/docker-compose
-	  chmod +x /usr/local/bin/docker-compose
+      chmod +x /usr/local/bin/docker-compose
       mkdir /lrd
       chown vagrant:vagrant /lrd
       git clone "https://lucasbasquerotto@github.com/lucasbasquerotto/root.git" /lrd
