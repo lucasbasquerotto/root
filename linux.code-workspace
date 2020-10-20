@@ -1,72 +1,73 @@
 {
-  "folders": [
-    {
-      "name": "env-main",
-      "path": "ctl/env-main"
-    },
-    {
-      "path": "ctl"
-    },
-    {
-      "name": "env",
-      "path": "repos/env"
-    },
-    {
-      "name": "env-base",
-      "path": "repos/env-base"
-    },
-    {
-      "name": "cloud",
-      "path": "repos/cloud"
-    },
-    {
-      "name": "custom-cloud",
-      "path": "repos/custom-cloud"
-    },
-    {
-      "name": "pod",
-      "path": "repos/pod"
-    },
-    {
-      "name": "custom-pod",
-      "path": "repos/custom-pod"
-    },
-    {
-      "name": "app",
-      "path": "repos/app"
-    },
-    {
-      "path": "container-images"
-    },
-    {
-      "path": "backups"
-    },
-    {
-      "path": "projects"
-    },
-    {
-      "path": "data"
-    },
-    {
-      "name": "dev",
-      "path": "."
-    }
-  ],
-  "settings": {
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "files.associations": {
-      "run": "shellscript",
-      "setup": "shellscript",
-      "hosts": "ini",
-      ".env": "properties"
-    },
-    "[yaml]": {
-      "editor.tabSize": 2
-    },
-    "[python]": {
-      "editor.tabSize": 2
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+	"folders": [
+		{
+			"name": "env-main",
+			"path": "ctl/env-main"
+		},
+		{
+			"path": "ctl"
+		},
+		{
+			"name": "env",
+			"path": "repos/env"
+		},
+		{
+			"name": "env-base",
+			"path": "repos/env-base"
+		},
+		{
+			"name": "cloud",
+			"path": "repos/cloud"
+		},
+		{
+			"name": "custom-cloud",
+			"path": "repos/custom-cloud"
+		},
+		{
+			"name": "pod",
+			"path": "repos/pod"
+		},
+		{
+			"name": "custom-pod",
+			"path": "repos/custom-pod"
+		},
+		{
+			"name": "app",
+			"path": "repos/app"
+		},
+		{
+			"path": "container-images"
+		},
+		{
+			"path": "backups"
+		},
+		{
+			"path": "projects"
+		},
+		{
+			"path": "data"
+		},
+		{
+			"name": "dev",
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.tabSize": 4,
+		"editor.formatOnSave": true,
+		"files.associations": {
+			"run": "shellscript",
+			"setup": "shellscript",
+			"launch": "shellscript",
+			"hosts": "ini",
+			".env": "properties"
+		},
+		"[yaml]": {
+			"editor.tabSize": 2
+		},
+		"[python]": {
+			"editor.tabSize": 2
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
