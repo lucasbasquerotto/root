@@ -5,6 +5,7 @@
 			"path": "ctl/env-main"
 		},
 		{
+			"name": "ctl",
 			"path": "ctl"
 		},
 		{
@@ -24,27 +25,31 @@
 			"path": "repos/custom-cloud"
 		},
 		{
-			"name": "pod",
-			"path": "repos/pod"
+			"name": "custom-pod",
+			"path": "repos/pod/custom-pod"
 		},
 		{
-			"name": "custom-pod",
-			"path": "repos/custom-pod"
+			"name": "pod",
+			"path": "repos/pod"
 		},
 		{
 			"name": "app",
 			"path": "repos/app"
 		},
 		{
+			"name": "container-images",
 			"path": "container-images"
 		},
 		{
+			"name": "backups",
 			"path": "backups"
 		},
 		{
+			"name": "projects",
 			"path": "projects"
 		},
 		{
+			"name": "data",
 			"path": "data"
 		},
 		{
