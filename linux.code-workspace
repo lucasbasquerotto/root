@@ -38,11 +38,11 @@
     },
     {
       "name": "container-images",
-      "path": "container-images"
+      "path": "repos/container-images"
     },
     {
       "name": "backups",
-      "path": "backups"
+      "path": "repos/backups"
     },
     {
       "name": "projects",
