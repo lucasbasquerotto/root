@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define :dockerhost do |config|
-    config.vm.box = "ubuntu/xenial64"
+    config.vm.box = "ubuntu/focal64" # 20.04
     config.vm.network "private_network", ip: ENV["LRD_DOCKER_HOST_IP"] || "192.168.33.11"
     config.vm.network "forwarded_port", guest: 8080, host: 8080
     config.vm.network "forwarded_port", guest: 8443, host: 8443
@@ -33,14 +33,23 @@ Vagrant.configure(2) do |config|
       locale-gen
       echo "Apt::Install-Recommends 'false';" >/etc/apt/apt.conf.d/02no-recommends
       echo "Acquire::Languages { 'none' };" >/etc/apt/apt.conf.d/05no-languages
+
       apt-get update
       wget -qO- https://get.docker.com/ | sh
-      curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(un
-ame -m)" -o /usr/local/bin/docker-compose
+      curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
       chmod +x /usr/local/bin/docker-compose
+
+      . /etc/os-release
+      echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /" | tee /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list
+      curl -L https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/Release.key | apt-key add -
+      apt-get update
+      apt-get -y upgrade
+      apt-get -y install podman
+
       mkdir /lrd
-      chown vagrant:vagrant /lrd
       git clone "https://lucasbasquerotto@github.com/lucasbasquerotto/root.git" /lrd
+	  echo "$(date '+%F %T') setup ended"
+      chown -R vagrant:vagrant /lrd
     EOF
   end
 end
