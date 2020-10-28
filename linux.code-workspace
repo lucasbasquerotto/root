@@ -61,6 +61,7 @@
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
     "files.associations": {
+      "entrypoint": "shellscript",
       "run": "shellscript",
       "setup": "shellscript",
       "launch": "shellscript",
