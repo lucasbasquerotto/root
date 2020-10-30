@@ -6,13 +6,12 @@ NC='\033[0m' # No Color
 
 dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-#shellcheck disable=SC1091,SC1090
+#shellcheck source=./env.sh
 . "$dir/env.sh"
 
-#shellcheck disable=SC2154
 var_ctl_repo="$ctl_repo"
-#shellcheck disable=SC2154
 var_env_repo="$env_repo"
+var_env_main_link_target="${env_main_link_target:-}"
 
 if [ ! -d "$dir/ctl/.git" ] || [ "${1:-}" = "-f" ]; then
 	echo -e "${CYAN}$(date '+%F %X') Clone the controller repository...${NC}"
@@ -21,6 +20,23 @@ if [ ! -d "$dir/ctl/.git" ] || [ "${1:-}" = "-f" ]; then
 else
 	echo -e "${CYAN}$(date '+%F %X') Pull the controller repository...${NC}"
 	git -C "$dir/ctl" pull
+fi
+
+env_main_dir="$dir/ctl/env-main"
+
+if [ -z "$var_env_main_link_target" ]; then
+	if [ -L "$env_main_dir" ]; then
+		rm -f "$env_main_dir"
+	fi
+
+	mkdir "$env_main_dir"
+else
+	if [ -d "$env_main_dir" ] && [ ! -L "$env_main_dir" ]; then
+		rm -rf "$env_main_dir"
+	fi
+
+	mkdir -p "$dir/$var_env_main_link_target"
+	ln -rsfT "$dir/$var_env_main_link_target" "$env_main_dir"
 fi
 
 echo -e "${CYAN}$(date '+%F %X') [start] Controller Setup...${NC}"

@@ -1,12 +1,12 @@
 {
   "folders": [
     {
-      "name": "env-main",
-      "path": "ctl/env-main"
-    },
-    {
       "name": "ctl",
       "path": "ctl"
+    },
+    {
+      "name": "env-main",
+      "path": "repos/env-main"
     },
     {
       "name": "env",
