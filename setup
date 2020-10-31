@@ -10,13 +10,14 @@ dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "$dir/env.sh"
 
 var_ctl_repo="$ctl_repo"
+var_ctl_repo_branch="${ctl_branch:-master}"
 var_env_repo="$env_repo"
 var_env_main_link_target="${env_main_link_target:-}"
 
 if [ ! -d "$dir/ctl/.git" ] || [ "${1:-}" = "-f" ]; then
 	echo -e "${CYAN}$(date '+%F %X') Clone the controller repository...${NC}"
 	shopt -s dotglob && rm -rf "$dir/ctl"/*
-	git clone "$var_ctl_repo" "$dir/ctl"
+	git clone --branch "$var_ctl_repo_branch" "$var_ctl_repo" "$dir/ctl"
 else
 	echo -e "${CYAN}$(date '+%F %X') Pull the controller repository...${NC}"
 	git -C "$dir/ctl" pull
