@@ -78,6 +78,12 @@
       "editor.tabSize": 2
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "shellcheck.customArgs": ["-x"]
+	"shellcheck.customArgs": [
+		"-x"
+	],
+	"python.linting.pylintArgs": [
+		"--ignored-modules=ansible.module_utils.basic,ansible.module_utils._text",
+		"--indent-string='  '"
+	]
   }
 }
