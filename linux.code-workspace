@@ -1,85 +1,85 @@
 {
-  "folders": [
-    {
-      "name": "ctl",
-      "path": "ctl"
-    },
-    {
-      "name": "env-main",
-      "path": "repos/env-main"
-    },
-    {
-      "name": "env",
-      "path": "repos/env"
-    },
-    {
-      "name": "env-base",
-      "path": "repos/env-base"
-    },
-    {
-      "name": "cloud",
-      "path": "repos/cloud"
-    },
-    {
-      "name": "custom-cloud",
-      "path": "repos/custom-cloud"
-    },
-    {
-      "name": "pod",
-      "path": "repos/pod"
-    },
-    {
-      "name": "custom-pod",
-      "path": "repos/custom-pod"
-    },
-    {
-      "name": "app",
-      "path": "repos/app"
-    },
-    {
-      "name": "container-images",
-      "path": "repos/container-images"
-    },
-    {
-      "name": "backups",
-      "path": "repos/backups"
-    },
-    {
-      "name": "projects",
-      "path": "projects"
-    },
-    {
-      "name": "data",
-      "path": "data"
-    },
-    {
-      "name": "dev",
-      "path": "."
-    }
-  ],
-  "settings": {
-    "terminal.integrated.cwd": ".",
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "files.associations": {
-      "build": "shellscript",
-      "entrypoint": "shellscript",
-      "run": "shellscript",
-      "setup": "shellscript",
-      "launch": "shellscript",
-      "hosts": "ini",
-      ".env": "properties"
-    },
-    "[yaml]": {
-      "editor.tabSize": 2,
-      "editor.insertSpaces": true
-    },
-    "[python]": {
-      "editor.tabSize": 2,
-      "editor.insertSpaces": true
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "shellcheck.customArgs": ["-x"],
-    "python.linting.pylintArgs": ["--indent-string='  '"]
-  }
+	"folders": [
+		{
+			"name": "ctl",
+			"path": "ctl"
+		},
+		{
+			"name": "env-main",
+			"path": "repos/env-main"
+		},
+		{
+			"name": "env",
+			"path": "repos/env"
+		},
+		{
+			"name": "env-base",
+			"path": "repos/env-base"
+		},
+		{
+			"name": "cloud",
+			"path": "repos/cloud"
+		},
+		{
+			"name": "custom-cloud",
+			"path": "repos/custom-cloud"
+		},
+		{
+			"name": "pod",
+			"path": "repos/pod"
+		},
+		{
+			"name": "custom-pod",
+			"path": "repos/custom-pod"
+		},
+		{
+			"name": "app",
+			"path": "repos/app"
+		},
+		{
+			"name": "container-images",
+			"path": "repos/container-images"
+		},
+		{
+			"name": "backups",
+			"path": "repos/backups"
+		},
+		{
+			"name": "projects",
+			"path": "projects"
+		},
+		{
+			"name": "data",
+			"path": "data"
+		},
+		{
+			"name": "dev",
+			"path": "."
+		}
+	],
+	"settings": {
+		"terminal.integrated.cwd": ".",
+		"editor.tabSize": 4,
+		"editor.formatOnSave": true,
+		"files.associations": {
+			"build": "shellscript",
+			"entrypoint": "shellscript",
+			"run": "shellscript",
+			"setup": "shellscript",
+			"launch": "shellscript",
+			"hosts": "ini",
+			".env": "properties"
+		},
+		"[yaml]": {
+			"editor.tabSize": 2,
+			"editor.insertSpaces": true
+		},
+		"[python]": {
+			"editor.tabSize": 2,
+			"editor.insertSpaces": true
+		},
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"shellcheck.customArgs": ["-x"],
+		"python.linting.pylintArgs": ["--indent-string='  '"]
+	}
 }
