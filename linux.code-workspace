@@ -80,6 +80,9 @@
 		},
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"shellcheck.customArgs": ["-x"],
-		"python.linting.pylintArgs": ["--indent-string='  '"]
+		"python.linting.pylintArgs": [
+			"--indent-string='  '"
+		],
+		"editor.suggestOnTriggerCharacters": false
 	}
 }
