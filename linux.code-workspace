@@ -21,16 +21,16 @@
 			"path": "repos/cloud"
 		},
 		{
-			"name": "custom-cloud",
-			"path": "repos/custom-cloud"
+			"name": "ext-cloud",
+			"path": "repos/ext-cloud"
 		},
 		{
 			"name": "pod",
 			"path": "repos/pod"
 		},
 		{
-			"name": "custom-pod",
-			"path": "repos/custom-pod"
+			"name": "ext-pod",
+			"path": "repos/ext-pod"
 		},
 		{
 			"name": "app",
@@ -82,12 +82,8 @@
 		},
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"shellcheck.customArgs": ["-x"],
-		"python.linting.pylintArgs": [
-			"--indent-string='  '"
-		],
-		"python.formatting.autopep8Args": [
-			"--indent-size=2"
-		],
+		"python.linting.pylintArgs": ["--indent-string='  '"],
+		"python.formatting.autopep8Args": ["--indent-size=2"],
 		"editor.quickSuggestions": false,
 		"editor.suggestOnTriggerCharacters": false,
 		"editor.acceptSuggestionOnCommitCharacter": false,
