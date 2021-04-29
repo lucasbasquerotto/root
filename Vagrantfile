@@ -7,8 +7,24 @@ Vagrant.configure(2) do |config|
   config.vm.define :dockerhost do |config|
     config.vm.box = "ubuntu/focal64" # 20.04
     config.vm.network "private_network", ip: ENV["LRD_DOCKER_HOST_IP"] || "192.168.33.11"
+
+    config.vm.network "forwarded_port", guest: 8000, host: 8000
+    config.vm.network "forwarded_port", guest: 8001, host: 8001
+    config.vm.network "forwarded_port", guest: 8002, host: 8002
+    config.vm.network "forwarded_port", guest: 8003, host: 8003
+    config.vm.network "forwarded_port", guest: 8004, host: 8004
+    config.vm.network "forwarded_port", guest: 8005, host: 8005
+
     config.vm.network "forwarded_port", guest: 8080, host: 8080
     config.vm.network "forwarded_port", guest: 8443, host: 8443
+
+    config.vm.network "forwarded_port", guest: 9000, host: 9000
+    config.vm.network "forwarded_port", guest: 9001, host: 9001
+    config.vm.network "forwarded_port", guest: 9002, host: 9002
+    config.vm.network "forwarded_port", guest: 9003, host: 9003
+    config.vm.network "forwarded_port", guest: 9004, host: 9004
+    config.vm.network "forwarded_port", guest: 9005, host: 9005
+
     config.vm.network "forwarded_port", guest: 9080, host: 9080
     config.vm.network "forwarded_port", guest: 9443, host: 9443
 
