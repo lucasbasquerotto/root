@@ -69,16 +69,8 @@
 			"launch": "shellscript",
 			"hosts": "ini",
 			"*.hosts": "ini",
+			"**/*.tpl.json": "plaintext",
 			".env": "properties"
-		},
-		"[yaml]": {
-			"editor.tabSize": 2,
-			"editor.insertSpaces": true
-		},
-		"[python]": {
-			"editor.tabSize": 2,
-			"editor.insertSpaces": true,
-			"editor.defaultFormatter": "ms-python.python"
 		},
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"shellcheck.customArgs": ["-x"],
@@ -90,6 +82,15 @@
 		"editor.quickSuggestionsDelay": 1000000,
 		"[json]": {
 			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		"[yaml]": {
+			"editor.tabSize": 2,
+			"editor.insertSpaces": true
+		},
+		"[python]": {
+			"editor.tabSize": 2,
+			"editor.insertSpaces": true,
+			"editor.defaultFormatter": "ms-python.python"
 		}
 	}
 }
