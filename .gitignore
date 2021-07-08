@@ -3,8 +3,9 @@
 
 # But not these files...
 !.gitignore
+!env.sh
+!linux.code-workspace
+!prettier.config.js
 !README.md
 !setup
-!env.sh
 !Vagrantfile
-!/linux.code-workspace
