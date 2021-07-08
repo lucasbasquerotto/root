@@ -70,7 +70,8 @@
 			"hosts": "ini",
 			"*.hosts": "ini",
 			"**/*.tpl.json": "plaintext",
-			".env": "properties"
+			".env": "properties",
+			"docker-compose.*": "yaml"
 		},
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"shellcheck.customArgs": ["-x"],
