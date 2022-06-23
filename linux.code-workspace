@@ -74,7 +74,6 @@
 			"docker-compose*.yml": "dockercompose",
 			"docker-compose*.schema.yml": "yaml"
 		},
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"shellcheck.customArgs": ["-x"],
 		"python.linting.pylintArgs": ["--indent-string='  '"],
 		"python.formatting.autopep8Args": ["--indent-size=2"],
