@@ -78,7 +78,11 @@
 		"shellcheck.customArgs": ["-x"],
 		"python.linting.pylintArgs": ["--indent-string='  '"],
 		"python.formatting.autopep8Args": ["--indent-size=2"],
-		"editor.quickSuggestions": false,
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
 		"editor.suggestOnTriggerCharacters": false,
 		"editor.acceptSuggestionOnCommitCharacter": false,
 		"editor.quickSuggestionsDelay": 1000000,
