@@ -4,7 +4,7 @@ This repository serves as a root directory for a setup.
 
 ## On non-Linux environments, with VSCode, Vagrant and VirtualBox installed:
 
-* This step can be skipped in other Linux environments.
+(* This step can be skipped in other Linux environments)
 
 - Run:
 
