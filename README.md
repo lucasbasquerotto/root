@@ -4,6 +4,8 @@ This repository serves as a root directory for a setup.
 
 ## On non-Linux environments, with VSCode, Vagrant and VirtualBox installed:
 
+* This step can be skipped in other Linux environments.
+
 - Run:
 
 ```shell
@@ -17,7 +19,7 @@ vagrant ssh-config > ssh_config
 
 - In VSCode, execute `Ctrl+Shift+P` -> `Remote-SSH: Connect to Host...` and choose the host of the ssh configuration file you added (`dockerhost` in this case).
 
-- Open the Folder `/lrd` in VScode inside the VM.
+- Open the Folder `/lrd` in VSCode inside the VM.
 
 ## Prepare the environment
 
